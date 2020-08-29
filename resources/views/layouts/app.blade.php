@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Nview - Sua escola online</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -26,47 +26,10 @@
 </head>
 <body>
     <div id="app">
-
-        <nav class="navbar navbar-dark" id="navtop" style="height: 40px; padding-top:5px; background:#0273af">
-            <div class="text-white">
-                <i class="fab fa-facebook-square pl-5 pr-3"></i>
-                <i class="fab fa-instagram pr-3"></i>
-                <i class="fab fa-linkedin-in pr-3"></i>
-                <i class="fab fa-youtube"></i>
-            </div>
-            <div class="text-white">
-                <i class="fas fa-phone-square-alt text-white" style="margin-top:2px; margin-right:5px; font-size:0.8rem"></i>
-                <a class="navbar-brand" style="font-size:0.8rem" href="tel:40034000">(31) 4003 4000</a>
-                <i class="fas fa-envelope text-white" style="margin-top:2px; margin-right:5px; font-size:0.8rem"></i>
-                <a href="mailto:contato@kicell7.com.br" class="text-white" style="text-decoration: none">email@email.com.br</a>
-            </div>
-
-        </nav>
-        <script>
-            $(document).ready(function() {
-                
-            if ( $(document).width() < 975 ) {
-                $("#navtop").hide();
-            }
-            else {
-            $("#navtop").show();
-            }
-            $( window ).resize(function() {
-                if ( $(document).width() < 975 ) {
-                $("#navtop").hide();
-            }
-            else {
-            $("#navtop").show();
-            }
-            });
-            
-            });
-            </script>
-
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow-sm sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    Nview
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -83,11 +46,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" style="color:white;" href="{{ route('login') }}">{{ __('Entrar') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" style="color:white;" href="{{ route('register') }}">{{ __('Cadastrar') }}</a>
                                 </li>
                             @endif
                         @else
