@@ -56,7 +56,7 @@
                         @else
                             <li class="nav-item">
                                 <a class="" style="color:white; font-size:1rem" href="{{ route('home') }}">
-                                    <button class="btn btn-outline-light"><strong>Painel Administrativo</strong></button>
+                                    <button class="btn btn-outline-danger text-white"><strong>Painel Administrativo</strong></button>
                                 </a>
                             </li>
 
