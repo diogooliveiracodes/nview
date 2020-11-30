@@ -10,14 +10,16 @@
     <title>Nview - Sua escola online</title>
 
     <!-- Scripts -->
-    <script src="{{URL::asset('js/app.js')}}" defer></script>
+    {{-- <script src="{{URL::asset('js/app.js')}}" defer></script> --}}
+    <script src="/js/app.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{URL::asset('css/app.css')}}" rel="stylesheet">
+    {{-- <link href="{{URL::asset('css/app.css')}}" rel="stylesheet"> --}}
+    <link rel="stylesheet" href="/css/app.css">
 
     {{-- fontawsome --}}
     <script src="https://kit.fontawesome.com/9f90449050.js" crossorigin="anonymous"></script>
