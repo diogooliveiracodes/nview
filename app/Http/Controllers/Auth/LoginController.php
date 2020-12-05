@@ -74,7 +74,7 @@ class LoginController extends Controller
     {
         $user = Socialite::driver('facebook')->user();
         //se o usuário não existir
-        dd($user);
+        //dd($user);
         $user = User::firstOrCreate([
             'email' => $user->email
         ], [
