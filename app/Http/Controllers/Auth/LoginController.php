@@ -74,12 +74,12 @@ class LoginController extends Controller
     {
         $user = Socialite::driver('facebook')->user();
         //se o usuário não existir
+        dd($user);
         $user = User::firstOrCreate([
             'email' => $user->email
         ], [
             'name' => $user->name,
             'password'=> Hash::make(Str::random(24)),
-            'avatar' => $user->url,
         ]);
         
         Auth::login($user, true);
