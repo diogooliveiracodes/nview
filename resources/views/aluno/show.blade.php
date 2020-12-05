@@ -4,10 +4,11 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-11">
-
-            <div class="card-body">
-                    
+        <div class='col-md-3'>
+            <img src="{{$aluno->url}}" width="100%" alt="">
+        </div>
+        <div class="col-md-9">
+            <div class="card-body">     
                 <div class="form-group row">
                     <label for="nome" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 

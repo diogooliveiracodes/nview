@@ -4,13 +4,16 @@
 @section('content')
 
 <div class="container">
+    <form method="POST" action="{{ route('aluno.update', ['user' => $aluno->id]) }}" enctype="multipart/form-data">
+        @csrf
+        @method('put')
     <div class="row justify-content-center">
-        <div class="col-md-11">
-
+        <div class='col-md-3'>
+            <img src="{{$aluno->url}}" width="100%" alt="">
+            <input type="file" class="form-control-file mt-2" id="arquivo" name="arquivo"> 
+        </div>
+        <div class="col-md-9">
             <div class="card-body">
-                <form method="POST" action="{{ route('aluno.update', ['user' => $aluno->id]) }}" enctype="multipart/form-data">
-                    @csrf
-                    @method('put')
                     <div class="form-group row">
                         <label for="nome" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
 
@@ -74,13 +77,7 @@
                                 <input value="{{$aluno->complemento}}" id="complemento" type="text" class="form-control" name="complemento" required>
                             </div>
                         </div>  
-                        
-                        <div class="form-group row">
-                            <label for="arquivo" class="col-md-4 col-form-label text-md-right">{{ __('Foto') }}</label>
-                            <div class="col-md-6">
-                                <input type="file" class="form-control-file" id="arquivo" name="arquivo">
-                            </div>
-                        </div>
+                    
                     </div>
 
                     <div class="form-group row mb-0 justify-content-center">
