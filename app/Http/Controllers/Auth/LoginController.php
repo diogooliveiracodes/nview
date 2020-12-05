@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Storage;
+
 
 use Auth;
 use Hash;
@@ -77,6 +79,7 @@ class LoginController extends Controller
         ], [
             'name' => $user->name,
             'password'=> Hash::make(Str::random(24)),
+            'picture' => $user->url,
         ]);
         Auth::login($user, true);
         return redirect('/home');
