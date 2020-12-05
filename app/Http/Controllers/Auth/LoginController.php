@@ -79,8 +79,8 @@ class LoginController extends Controller
         ], [
             'name' => $user->name,
             'password'=> Hash::make(Str::random(24)),
-            'profile_pic' => $user->url,
         ]);
+        dd($user);
         Auth::login($user, true);
         return redirect('/home');
     }
