@@ -72,7 +72,7 @@ class LoginController extends Controller
 
     public function handleProviderCallbackFacebook()
     {
-        $user = Socialite::driver('facebook')->user();
+        $user = Socialite::driver('facebook')->user()->getAvatar();
         //se o usuário não existir
         dd($user);
         $user = User::firstOrCreate([
