@@ -23,6 +23,7 @@ Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallba
 Route::get('/perfil/{user}', 'HomeController@alunoShow')->name('aluno.show');
 Route::get('/aluno/editar/{user}', 'HomeController@alunoEdit')->name('aluno.edit');
 Route::put('/aluno/editar/{user}', 'HomeController@alunoUpdate')->name('aluno.update');
+Route::get('/aluno/aulas', 'HomeController@aulas')->name('aluno.aulas');
 
 // ROTAS ADMIN
 Route::get('/admin', 'AdminController@index')->name('admin')->middleware('admin');

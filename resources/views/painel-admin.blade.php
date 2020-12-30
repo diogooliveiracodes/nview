@@ -1,1 +1,5 @@
-PAINEL ADMIN
+@extends('layouts.dashboard')
+
+@section('content')
+
+@endsection

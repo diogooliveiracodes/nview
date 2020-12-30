@@ -10,7 +10,12 @@
     <div class="row justify-content-center">
         <div class='col-md-3'>
             <img src="{{$aluno->url}}" width="100%" alt="">
-            <input type="file" class="form-control-file mt-2" id="arquivo" name="arquivo"> 
+            <input type="file" class="form-control-file mt-2 @error('foto') is-invalid @enderror" id="foto" name="foto">
+            @error('foto')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror 
         </div>
         <div class="col-md-9">
             <div class="card-body">
@@ -74,7 +79,7 @@
                             <label for="complemento" class="col-md-4 col-form-label text-md-right">{{ __('Complemento') }}</label>
 
                             <div class="col-md-6">
-                                <input value="{{$aluno->complemento}}" id="complemento" type="text" class="form-control" name="complemento" required>
+                                <input value="{{$aluno->complemento}}" id="complemento" type="text" class="form-control" name="complemento">
                             </div>
                         </div>  
                     

@@ -68,7 +68,7 @@
                     </div>
                     <div class="form-group row justify-content-center">
                         <form action="{{route('aluno.edit', ['user'=> $aluno->id])}}">
-                            <button type="submit" class="btn btn-primary btn-md mx-2">Editar</button>
+                            <button type="submit" class="btn btn-primary btn-lg mx-2">Editar</button>
                         </form>
                     </div>
                 </div>

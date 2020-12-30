@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Nview - Dashboard</title>
+  <title>Admin - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,9 +41,9 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="{{route('home')}}">
+        <a class="nav-link" href="{{route('admin')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Admin Dashboard</span></a>
       </li>
 
       <!-- Divider -->
