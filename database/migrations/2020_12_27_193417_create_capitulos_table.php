@@ -16,8 +16,11 @@ class CreateCapitulosTable extends Migration
         Schema::create('capitulos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('curso_id');
-            $table->string('nome');
-            $table->integer('identificador');
+            $table->string('name');
+            $table->integer('identifyer');
+            $table->text('description');
+            $table->string('created_by');
+            $table->string('updated_by')->nullable();
             $table->timestamps();
         });
     }

@@ -47,7 +47,7 @@ class HomeController extends Controller
     public function alunoUpdate(Request $request, User $user)
     {
         $request->validate([
-            'foto' => 'image|4000',
+            'foto' => 'image|max:4000',
         ]);
 
         if ($request->foto != null){

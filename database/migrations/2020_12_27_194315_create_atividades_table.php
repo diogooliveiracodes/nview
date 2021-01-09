@@ -18,13 +18,15 @@ class CreateAtividadesTable extends Migration
             $table->foreignId('curso_id');
             $table->foreignId('capitulo_id');
             $table->foreignId('aula_id');
-            $table->integer('identificador');
-            $table->text('pergunta');
+            $table->integer('identifyer');
+            $table->text('question');
             $table->text('1');
             $table->text('2');
             $table->text('3');
             $table->text('4');
-            $table->text('correta');
+            $table->text('correct');
+            $table->string('created_by');
+            $table->string('updated_by')->nullable();
             $table->timestamps();
         });
     }

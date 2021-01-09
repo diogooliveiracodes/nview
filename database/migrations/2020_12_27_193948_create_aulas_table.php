@@ -17,10 +17,13 @@ class CreateAulasTable extends Migration
             $table->id();
             $table->foreignId('curso_id');
             $table->foreignId('capitulo_id');
-            $table->string('nome');
-            $table->text('descricao');
+            $table->string('name');
+            $table->integer('identifyer');
+            $table->text('description');
             $table->string('filename')->nullable();
             $table->string('url')->nullable();
+            $table->string('created_by');
+            $table->string('updated_by')->nullable();
             $table->timestamps();
         });
     }
