@@ -5,7 +5,7 @@ O site possui um painel administrativo totalmente responsivo e perfeitamente fun
 ## Funcionalidades
 <ol>
     <li>Área do Aluno</li>
-    <ol>
+    <ul>
         <li>Aulas</li>
         <li>Atividades</li>
         <li>Fórum</li>
@@ -13,16 +13,16 @@ O site possui um painel administrativo totalmente responsivo e perfeitamente fun
         <li>FAQ</li>
         <li>Login com Redes sociais</li>
         <li>Cadastro de formas de pagamento</li>
-    </ol>
+    </ul>
     <li>Painel Administrativo</li>
-    <ol>
+    <ul>
         <li>Cadastro de cursos, capítulos, aulas, atividades.</li>
         <li>Moderação do Fórum</li>
         <li>Edição do FAQ</li>
         <li>Administração de Usuários</li>
         <li>Dashboard com número de mátriculas, conversões, renovações e valor arrecadado.</li>
         <li>Postagens de banners e artigos na página inicial</li>
-    </ol>
+    </ul>
     <li>Conexão com AWS</li>
     <li>Conexão com Vimeo</li>
 </ol>
