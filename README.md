@@ -38,4 +38,4 @@ O site possui um painel administrativo totalmente responsivo e perfeitamente fun
 </ul>
 
 ## Site publicado em:
-<a href="http://nview.herokuapp.com/"> https://www.kitcell7.com.br </a>
+<a href="http://nview.herokuapp.com/"> nview.herokuapp.com </a>
